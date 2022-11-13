@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="21507" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="21501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TestWatchOS" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Message label" numberOfLines="0" id="42v-zx-8Cj"/>
+                        <label alignment="left" text="Reply label" numberOfLines="0" id="St4-Do-6Js"/>
+                        <button width="1" alignment="left" title="Send message" id="UEt-RR-Wcv">
+                            <connections>
+                                <action selector="sendMessagePressed" destination="AgC-eL-Hgc" id="yxV-uJ-mZd"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Context label" numberOfLines="0" id="Uiz-CR-VvZ"/>
+                        <button width="1" alignment="left" title="Update application context" id="eJh-fr-mkd">
+                            <connections>
+                                <action selector="updateApplicationContextPressed" destination="AgC-eL-Hgc" id="LcV-2H-tur"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="User info label" numberOfLines="0" id="7Xi-cE-zUb"/>
+                        <button width="1" alignment="left" title="Send user info" id="tEe-y8-xtu">
+                            <connections>
+                                <action selector="transferUserInfoPressed" destination="AgC-eL-Hgc" id="elm-Wl-bdL"/>
+                            </connections>
+                        </button>
+                        <imageView alignment="left" id="T4y-eM-TC4"/>
+                        <button width="1" alignment="left" title="Transfer sample image" id="OIf-S1-xhR">
+                            <connections>
+                                <action selector="transferImagePressed" destination="AgC-eL-Hgc" id="STB-qR-tHk"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="contextLabel" destination="Uiz-CR-VvZ" id="pZf-nf-Jwt"/>
+                        <outlet property="image" destination="T4y-eM-TC4" id="4KI-dT-vCv"/>
+                        <outlet property="messageLabel" destination="42v-zx-8Cj" id="83T-jY-TJo"/>
+                        <outlet property="replyLabel" destination="St4-Do-6Js" id="dRt-bg-GMB"/>
+                        <outlet property="userInfoLabel" destination="7Xi-cE-zUb" id="WP9-q9-oYi"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="91" y="-60"/>
+        </scene>
+    </scenes>
+</document>
